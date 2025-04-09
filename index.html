@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Практическая работа №1 - Hamster Farm</title>
+<link rel="icon" href="icons8-хомяк-32.png" type="image/png">
+<!-- Подключаем весёлый шрифт из Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<style>
+body {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    font-family: 'Baloo 2', cursive, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.98);
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+/* Заголовки чёрного цвета */
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000;
+}
+p, dl, ol, ul, blockquote, img, a {
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.05);
+}
+blockquote {
+    font-style: italic;
+    text-align: center;
+    border-left: 4px solid #000; /* чёрная полоска */
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 600px;
+}
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+/* Стиль для кнопок-якорей */
+.anchor-button {
+    display: inline-block;
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+.anchor-button:hover {
+    background: #d35400;
+    color: #fff;
+}
+/* Стили для кнопки, показывающей контакты */
+.toggle-button {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+.toggle-button:hover {
+    background: #d35400;
+}
+/* Скрытый блок с контактами */
+#contacts {
+    text-align: center;
+    display: none;
+    margin-top: 15px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1 id="Top1">Ферма хомяков</h1>
+<h2 id="Top2">О нас:</h2>
+<p>
+    <strong>Выращиваем хомячка оптом (оплата за кг)</strong>
+    <br><em>Базируемся в Москве, Салтыковская улица, 24Б</em>
+</p>
+<p>
+    <blockquote>Совесть — как толстый хомяк: или спит, или грызёт.</blockquote>
+    <cite>Сергей Сергеевич Ленцов</cite>
+</p>
+<img src="https://photobooth.cdn.sports.ru/preset/wysiwyg/c/a9/ed5fc79fe45f9b55ca5ce184ffc99.jpeg" alt="Крутой хомяк бизнесмен" width="400" height="250">
+<h3><b>Основные термины для понимания последующего текста:</b></h3>
+<dl>
+    <dt>Хомяк <sub>(хамстер, хамстерино, хома)</sub></dt>
+    <dd>Маленький грызун небольших размеров.</dd>
+    <dd>Вредитель хлебных злаков.</dd>
+    <dt>Листинг</dt>
+    <dd>Процедура допуска ценных бумаг на биржу.</dd>
+    <dt>Корм</dt>
+    <dd>Пища животных.</dd>
+    <dd>Заготовочные, фуражные, сырые.</dd>
+    <dt>Вид</dt>
+    <dd>Основная структурная единица биологической систематики живых организмов.</dd>
+    <dt>Зелень</dt>
+    <dd>Свежие молодые побеги растений, растущих в культивированном или свободном виде.</dd>
+</dl>
+<h3><b>Виды хомяков <i>доступные</i> для покупки:</b></h3>
+<ol>
+    <li>Хомяки обыкновенные</li>
+    <li>Джунгарские <sup>(джунгарики)</sup></li>
+    <li>Китайские</li>
+    <li>Хомяки Робковского</li>
+    <li><abbr title="хомяки Кемпебльские">ХК</abbr></li>
+</ol>
+<h3><b>Все что требуется для содержания <u>счастливого хомяка</u> от B до Z:</b></h3>
+<ol type="A">
+    <li>Корм
+    <ul>
+        <li>Зерновой корм</li>
+        <li>Зелень</li>
+        <li>Фрукты и овощи</li>
+    </ul>
+    </li>
+    <li>Питьевая вода</li>
+    <li>Удобное жилье
+    <ul>
+        <li>С кормушкой</li>
+        <li>С поилкой</li>
+        <li>С развлечениями и игрушками</li>
+        <li>С туалетом</li>
+        <li>С домом</li>
+    </ul>
+    </li>
+</ol>
+<img usemap="#HAMSTmap" src="https://lemurrr.ru/medias/sys_master/images/hb2/h9e/9136126656542.png" alt="Виды хомяков">
+<map name="#HAMSTmap">
+    <area shape="polygon" coords="0,404,0,0,776,0,777,400" href="https://lemurrr.ru/article/siriyskiy-homyak" alt="хомяки">
+    <area shape="rect" coords="0,404,0,776" href="https://lemurrr.ru/article/siriyskiy-homyak" alt="хомяки">
+    <area shape="circle" coords="388,200,100" href="https://lemurrr.ru/article/siriyskiy-homyak" alt="хомяки">
+</map>
+
+<!-- Секция с "кнопками"-якорями -->
+<section>
+    <a href="#Top1" class="anchor-button">Жмякни для перехода на заголовок</a>
+    <a href="#Top2" class="anchor-button">Жмякни для перехода на подзаголовок</a>
+    <a href="https://zoostore.pro/blog/vazhnye-aspekty-soderzhaniya-i-ukhoda-za-khomyakom-sovety-dlya-budushchikh-vladeltsev/"
+        class="anchor-button" target="_blank">
+        На справочник с хомяками
+    </a>
+</section>
+
+<!-- Секция с кнопкой для показа контактов -->
+<section id="contact-section">
+    <button class="toggle-button" onclick="toggleContacts()">Наши контакты</button>
+    <div id="contacts">
+    <p><a href="tel:+78129355252">Call Us: +7 8129355252</a></p>
+    <p><a href="mailto:buyhumsterpls@mail.ru">Email Us: buyhumsterpls@mail.ru</a></p>
+    </div>
+</section>
+
+<footer>
+    <p style="text-align: center;">&copy; 2025 Hamster Farm. All Rights Reserved.</p>
+</footer>
+</div>
+
+<script>
+function toggleContacts() {
+    var contacts = document.getElementById("contacts");
+    if (contacts.style.display === "none" || contacts.style.display === "") {
+    contacts.style.display = "block";
+    } else {
+    contacts.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
